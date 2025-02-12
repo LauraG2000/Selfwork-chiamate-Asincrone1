@@ -1,0 +1,56 @@
+body{
+    background-color: rgb(255, 233, 236)
+}
+h2 {
+    color: rgb(145, 87, 95);
+}
+h3 {
+    color: rgb(235, 168, 168)
+}
+
+/* Fonts: */
+
+/* Applica Ubuntu Sans Mono a tutti gli elementi */
+h1, h2, h3, h4, .h1, .h2, .h3 {
+    font-family: "Ubuntu Sans Mono", serif;
+    font-weight: 300; 
+    font-optical-sizing: auto;
+    color: black;
+}
+* {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 700; 
+    font-style: normal;
+    color: black;
+}
+
+:root{
+    --white-pink: rgb(255, 233, 236);
+    --purple: rgb(145, 87, 95);
+    --pink:  rgb(235, 168, 168);
+}
+
+.bg-danger-subtle{
+    background-color: var(--pink);
+}
+
+.bg-light{
+    background-color: var(--white-pink);
+}
+
+.bg-primary-subtle {
+    background-color: var(--purple);
+}
+
+.text-danger-emphasis {
+    color: var(--pink)
+}
+
+.text-light {
+    color: var(--white-pink);
+}
+
+.text-primary {
+    color: var(--purple);
+}
