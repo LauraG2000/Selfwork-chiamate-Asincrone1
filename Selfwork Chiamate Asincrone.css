@@ -16,7 +16,7 @@ h1, h2, h3, h4, .h1, .h2, .h3 {
 
 :root{
     --white-pink: rgb(255, 233, 236);
-    --purple: rgb(145, 87, 95);
+    --purple: rgb(139, 70, 80);
     --pink:  rgb(235, 168, 168);
     --neon-pink: rgb(160, 0, 51);
 }
@@ -50,7 +50,7 @@ h1, h2, h3, h4, .h1, .h2, .h3 {
 }
 
 .text-primary {
-    color: var(--purple);
+    color: var(--purple) !important;
 }
 
 /* Navbar */
@@ -62,6 +62,7 @@ h1, h2, h3, h4, .h1, .h2, .h3 {
 .nav-link {
     color: var(--purple);
     font-weight: 700;
+    font-size: x-large;
 }
 
 .nav-link:hover {
@@ -72,4 +73,12 @@ h1, h2, h3, h4, .h1, .h2, .h3 {
 
 .logo{
     width: 70px;
+}
+
+/* Header */
+.header{
+    background-image:linear-gradient(rgba(139, 70, 80), transparent, rgba(139, 70, 80)),url(Media/background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
