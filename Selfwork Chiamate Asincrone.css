@@ -19,6 +19,15 @@ h1, h2, h3, h4, .h1, .h2, .h3 {
     --purple: rgb(139, 70, 80);
     --pink:  rgb(235, 168, 168);
     --neon-pink: rgb(160, 0, 51);
+    --soft-orange: rgb(225, 175, 130); 
+}
+
+body{
+    background-color: var(--purple);
+}
+
+.bg-success{
+    background-color: var(--soft-orange);
 }
 
 .bg-warning{
@@ -37,12 +46,16 @@ h1, h2, h3, h4, .h1, .h2, .h3 {
     background-color: var(--purple) !important;
 }
 
+.text-success{
+    color: var(--soft-orange) !important;
+}
+
 .text-danger{
     color: var(--neon-pink);
 }
 
 .text-danger-emphasis {
-    color: var(--pink)
+    color: var(--pink) !important;
 }
 
 .text-light {
@@ -75,10 +88,119 @@ h1, h2, h3, h4, .h1, .h2, .h3 {
     width: 70px;
 }
 
+.logo2{
+    width: 35px;
+    transition: 0.4s;
+    margin-right: 5%;
+}
+
 /* Header */
 .header{
-    background-image:linear-gradient(rgba(139, 70, 80), transparent, rgba(139, 70, 80)),url(Media/background.png);
+    background-image:linear-gradient(rgba(235, 168, 168), transparent,rgba(139, 70, 80)),url(Media/background.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.btn-custom{
+    background-color: var(--pink);
+    border: 1px solid var(--neon-pink);
+    margin: 0px 15px;
+    padding: 20px 20px;
+    border-radius: 40%;
+    transition: 0.3s;
+
+}
+
+.btn-custom:hover{
+    background-color: var(--purple);
+    border: 2px solid var(--soft-orange);
+    color: white;
+    transform: scale(1.1);
+}
+
+#icona-mascara, #icona-gloss, #icona-palette{
+    width: 80px;
+}
+
+/* Positoned */
+.positioned{
+    position: relative;
+    top: -150px;
+}
+
+/* Stili base per .col-custom */
+.col-custom {
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+    background-color: var(--pink);
+    border: 1px solid var(--neon-pink);
+    border-radius: 20%;;
+
+}
+
+.col-custom:hover {
+    background-color: var(--purple); 
+    color: var(--pink);  
+    transform: scale(1.1);
+    border: 2px solid var(--soft-orange);
+    
+
+}
+
+.col-custom:hover * {
+    color: var(--pink); 
+}
+
+@media screen and (max-width: 600px){
+    .positioned{
+        position: static;
+    }
+}
+
+.container-fluid {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.colored{
+    text-decoration: underline;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.p-body{
+    color: var(--pink);
+}
+
+/* Numeri incrementali */
+.number{
+    font-size: 50px;
+    font-weight: 900;
+    color: var(--white-pink);
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
+
+.card-review{
+    height: 250px;
+    width: 500px;
+}
+
+.swiper-slide{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-star{
+    color: var(--soft-orange);
+}
+
